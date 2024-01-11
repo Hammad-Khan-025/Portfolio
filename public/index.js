@@ -1,0 +1,75 @@
+// responsive navbar
+let barButton = document.querySelector('.bar-btn');
+let dropDown = document.querySelector('.dropdown');
+
+barButton.addEventListener('click', () => {
+    if(dropDown.classList.contains('hidden')){
+        dropDown.classList.remove('hidden')
+        barButton.innerHTML = `<i class="fa-solid fa-xmark"></i>`
+    }
+    else{
+        dropDown.classList.add('hidden')
+        barButton.innerHTML = `<i class="fa-solid fa-bars"></i>`
+    }
+})
+
+// scroll reveal effects
+
+ScrollReveal({
+    reset: true,
+    distance: '80px',
+    duration: 2000,
+    delay: 200
+  });
+
+  ScrollReveal().reveal('.reveal-top', { origin: 'top' });
+  ScrollReveal().reveal('.reveal-bottom', { origin: 'bottom' });
+
+
+// Get the button element
+var scrollButton = document.querySelector('.fixed-button');
+
+// Function to toggle button visibility based on scroll position
+function toggleScrollButton() {
+    if (window.scrollY > 0) {
+        scrollButton.style.display = 'block';
+    } else {
+        scrollButton.style.display = 'none';
+    }
+}
+
+// Attach the toggle function to the scroll event
+window.addEventListener('scroll', toggleScrollButton);
+
+// Trigger the toggle function initially to handle the initial state
+toggleScrollButton();
+
+
+
+// contact alert modal
+const input1 = document.querySelector('.input1')
+const input2 = document.querySelector('.input2')
+const input3 = document.querySelector('.input3')
+const input4 = document.querySelector('.input4')
+const input5 = document.querySelector('.input5')
+const messageBtn = document.querySelector('.message')
+
+messageBtn.addEventListener('click',()=>{
+    if(input1.value === "" || input2.value === "" || input3.value === "" || input4.value === "" || input5.value === ""){
+        alert("Please fill out the empty fields")
+    }
+    else {
+        window.location.href = "success.html";
+        clearInputFields()
+    }
+})
+
+function clearInputFields() {
+    input1.value = '';
+    input2.value = '';
+    input3.value = '';
+    input4.value = '';
+    input5.value = '';
+}
+window.addEventListener('beforeunload', clearInputFields);
+
