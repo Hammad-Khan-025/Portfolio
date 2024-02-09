@@ -1,7 +1,14 @@
 // responsive navbar
 let barButton = document.querySelector('.bar-btn');
 let dropDown = document.querySelector('.dropdown');
+let listBtn = document.querySelectorAll('.listBtn');
 
+listBtn.forEach((items)=>{
+    items.addEventListener("click", ()=>{
+            dropDown.classList.add('hidden')
+            barButton.innerHTML = `<i class="fa-solid fa-bars"></i>`
+    })
+})
 barButton.addEventListener('click', () => {
     if(dropDown.classList.contains('hidden')){
         dropDown.classList.remove('hidden')
@@ -31,7 +38,7 @@ var scrollButton = document.querySelector('.fixed-button');
 
 // Function to toggle button visibility based on scroll position
 function toggleScrollButton() {
-    if (window.scrollY > 0) {
+    if (window.scrollY > 500) {
         scrollButton.style.display = 'block';
     } else {
         scrollButton.style.display = 'none';

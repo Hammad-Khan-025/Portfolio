@@ -917,6 +917,11 @@ video {
   line-height: 2.5rem;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -938,10 +943,6 @@ video {
 
 .font-extrabold {
   font-weight: 800;
-}
-
-.font-medium {
-  font-weight: 500;
 }
 
 .font-normal {
@@ -972,9 +973,9 @@ video {
   letter-spacing: 0.1em;
 }
 
-.text-gray-300 {
+.text-gray-400 {
   --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .text-green-500 {
@@ -1011,6 +1012,10 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 .social-icons {
