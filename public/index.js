@@ -1,14 +1,23 @@
-// responsive navbar
 let barButton = document.querySelector('.bar-btn');
 let dropDown = document.querySelector('.dropdown');
 let listBtn = document.querySelectorAll('.listBtn');
 
+
+// view cv button
+let viewCv = document.getElementById("viewCvBtn")
+viewCv.addEventListener("click", ()=> {
+    window.location.href = "My-CV-Code.pdf";
+  });
+
+//   close all list items when any one is clicked in mobile mode
 listBtn.forEach((items)=>{
     items.addEventListener("click", ()=>{
             dropDown.classList.add('hidden')
             barButton.innerHTML = `<i class="fa-solid fa-bars"></i>`
     })
 })
+
+//  toggle button
 barButton.addEventListener('click', () => {
     if(dropDown.classList.contains('hidden')){
         dropDown.classList.remove('hidden')
