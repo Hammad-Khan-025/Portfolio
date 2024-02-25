@@ -11,22 +11,36 @@
 <body>
     
     <!-- navbar starts here -->
-    <nav class="flex justify-between px-4 md:px-12 h-14 md:h-16 items-center bg-slate-900 text-white fixed top-0 left-0 right-0 z-10">
+    <!-- <nav class="bg-slate-900 flex items-center justify-between h-14 md:h-16 px-4 md:px-12 fixed top-0 left-0 right-0 z-10">
         <div>
             <h2 class="uppercase text-xl md:text-2xl tracking-widest font-normal text-teal-400">portfolio.</h2>
         </div>
-        <ul class="md:flex hidden gap-5 font-semibold absolute md:relative top-14 md:top-auto left-0 md:left-auto bg-slate-800 md:bg-inherit w-full md:w-auto text-center py-4 md:py-0 border-t-2 md:border-none opacity-90 dropdown z-50">
+        <ul class="md:flex gap-5 font-semibold fixed md:relative top-14 md:top-auto left-0 md:left-auto bg-slate-800 md:bg-inherit w-full md:w-auto text-center py-4 md:py-0 border-t-2 border-b-2 md:border-none dropdown transition duration-500 ease-in-out text-white -z-10">
             <a href="#home"><li class="mb-4 md:mb-0 hover:text-teal-400 listBtn">Home</li></a>
             <a href="#about"><li class="mb-4 md:mb-0 hover:text-teal-400 listBtn">About</li></a>
             <a href="#projects"><li class="mb-4 md:mb-0 hover:text-teal-400 listBtn">Projects</li></a>
             <a href="#contact"><li class="mb-4 md:mb-0 hover:text-teal-400 listBtn">Contact</li></a>
         </ul>
         <button class="md:hidden text-lg md:text-xl text-white bar-btn"><i class="fa-solid fa-bars"></i></button>
+    </nav> -->
+
+    <nav class="bg-slate-900 flex items-center justify-between h-14 md:h-16 px-4 md:px-12 fixed top-0 right-0 left-0 z-50">
+        <div>
+            <h2 class="uppercase text-xl md:text-2xl tracking-widest font-normal text-teal-400">portfolio.</h2>
+        </div>
+        <ul class="md:flex gap-5 text-white font-semibold tracking-widest fixed md:relative top-14 md:top-auto left-0 md:left-auto w-full md:w-auto text-center bg-slate-700 md:bg-inherit transitions opacity-0 md:opacity-100 py-6 md:py-0 leading-10 border-t-2 border-b-2 md:border-none border-slate-400 dropdown">
+            <a href="#home"><li class="mb-5 md:mb-0 mt-5 md:mt-0 hover:text-teal-400 listBtn ">Home</li></a>
+            <a href="#about"><li class="mb-5 md:mb-0 hover:text-teal-400 listBtn">About</li></a>
+            <a href="#projects"><li class="mb-5 md:mb-0 hover:text-teal-400 listBtn">Projects</li></a>
+            <a href="#contact"><li class="mb-5 md:mb-0 hover:text-teal-400 listBtn">Contact</li></a>
+        </ul>
+        <button class="md:hidden text-lg md:text-xl text-white bar-btn"><i class="fa-solid fa-bars"></i></button>
     </nav>
+    
     <!-- navbar ends here -->
 
     <!-- Home section starts here -->
-    <header class="w-full h-screen bg-no-repeat bg-cover bg-gradient-to-bl bg-slate-900 pt-12" id="home">
+    <header class="w-full h-screen bg-no-repeat bg-cover bg-slate-900 pt-12 -z-10" id="home">
 
         <div class="flex flex-col items-center justify-center gap-3 md:gap-5 h-[calc(100vh-_9.98439937597504vh)] text-white font-bold text-center">
             
