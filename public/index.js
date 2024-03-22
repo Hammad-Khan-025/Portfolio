@@ -12,19 +12,19 @@ viewCv.addEventListener("click", ()=> {
 //   close all list items when any one is clicked in mobile mode
 listBtn.forEach((items)=>{
     items.addEventListener("click", ()=>{
-            dropDown.classList.remove('show-opacity')
+            dropDown.classList.remove('show-height')
             barButton.innerHTML = `<i class="fa-solid fa-bars"></i>`
     })
 })
 
 //  toggle button
 barButton.addEventListener('click', () => {
-    if(dropDown.classList.contains('show-opacity')){
-        dropDown.classList.remove('show-opacity')
+    if(dropDown.classList.contains('show-height')){
+        dropDown.classList.remove('show-height')
         barButton.innerHTML = `<i class="fa-solid fa-bars"></i>`
     }
     else{
-        dropDown.classList.add('show-opacity')
+        dropDown.classList.add('show-height')
         // barButton.classList.add('rotate')
         barButton.innerHTML = `<i class="fa-solid fa-xmark rotate"></i>`
         // After a delay, remove the rotate class to stop rotation

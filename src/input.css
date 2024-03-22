@@ -10,8 +10,8 @@ input::-webkit-inner-spin-button {
 html{
     scroll-behavior: smooth;
 }
-.show-opacity{
-    opacity: 1;
+.show-height{
+    height: 260px;
 }
 .rotate {
     animation: rotate 0.5s linear forwards; /* Change the duration and timing function as needed */
