@@ -6,7 +6,7 @@ let listBtn = document.querySelectorAll('.listBtn');
 // view cv button
 let viewCv = document.getElementById("viewCvBtn")
 viewCv.addEventListener("click", ()=> {
-    window.location.href = "My-CV-Code.pdf";
+    window.location.href = "HKCV-Code.pdf";
   });
 
 //   close all list items when any one is clicked in mobile mode
