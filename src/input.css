@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.show-height{
+    height: 260px;
+}
+.rotate {
+    animation: rotate 0.5s linear forwards; /* Change the duration and timing function as needed */
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+
+.social-icons{
+    @apply border-2 border-teal-400 text-lg md:text-2xl w-10 md:w-12 h-10 md:h-12 rounded-full pt-[10px] hover:text-slate-900 hover:bg-teal-400 hover:shadow-custom transitions;
+}
+.cv-btn{
+    @apply bg-teal-400 text-slate-900 font-bold py-2 md:py-3 px-3 md:px-4 mt-3 md:mt-0 rounded-full shadow-custom hover:shadow-none transitions;
+}
+
+.project-cards{
+    @apply bg-white hover:scale-105 w-[90%] sm:w-[70%] md:w-[40%] lg:w-[30%] text-slate-900 rounded-lg overflow-hidden transitions;
+}   
+.view-project-btn{
+    @apply text-slate-700 hover:bg-slate-700 text-sm md:text-base hover:text-white border-2 border-slate-700 py-1 px-2 mt-2 rounded-full font-bold transitions;
+}
+
+.input-field{
+    @apply p-3 md:p-4 w-[280px] sm:w-[250px] md:w-[250px] focus:outline-none bg-slate-900 placeholder-slate-600;
+}
+.input-textarea{
+    @apply w-[280px] sm:w-[512px] md:w-[512px] h-40 md:h-56 focus:outline-none resize-none bg-slate-900 mt-3 mb-4 p-3 md:p-4 placeholder-slate-600;
+}
+
+.footer-icons{
+    @apply border-2 border-teal-400 text-lg w-10 h-10 rounded-full pt-[9px] hover:text-slate-900 hover:bg-teal-400 hover:shadow-custom transitions;
+}
+.transitions{
+    @apply transition ease-linear duration-300;
+}
