@@ -6,8 +6,8 @@ let listBtn = document.querySelectorAll('.listBtn');
 let viewCv = document.getElementById("viewCvBtn");
 viewCv.addEventListener("click", () => {
     const link = document.createElement('a');
-    link.href = 'HKCV-Code.pdf'; // Path to your CV PDF file
-    link.download = 'Hammad-Khan-CV.pdf'; // The name for the downloaded file
+    link.href = 'Hammad_CV.pdf'; // Path to your CV PDF file
+    link.download = 'Hammad_CV.pdf'; // The name for the downloaded file
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

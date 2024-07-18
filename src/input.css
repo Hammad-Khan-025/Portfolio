@@ -35,10 +35,10 @@ html{
 }
 
 .project-cards{
-    @apply bg-white hover:scale-105 w-[90%] sm:w-[70%] md:w-[40%] lg:w-[30%] text-slate-900 rounded-lg overflow-hidden transitions;
+    @apply bg-white hover:scale-105 w-[90%]  text-slate-900 rounded-lg overflow-hidden transitions;
 }   
 .view-project-btn{
-    @apply text-slate-700 hover:bg-slate-700 text-sm md:text-base hover:text-white border-2 border-slate-700 py-1 px-2 mt-2 rounded-full font-bold transitions;
+    @apply bg-teal-500   text-white hover:bg-teal-600  tracking-wider text-sm md:text-base  border border-teal-500 py-2 px-3 mt-5 rounded-full transitions;
 }
 
 .input-field{
